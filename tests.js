@@ -1,13 +1,31 @@
-//Sobreescribe el template
-// ReactiveTemplates.set('collections.datos.update', 'mitemplate');
+///////////////////////////////////////
+// POSTFIX
+///////////////////////////////////////
+UserProfileSchema = new SimpleSchema({
+  // name: {
+  //   type: String,
+  //   label: orion.helpers.getTranslation('accounts.schema.profile.name')
+  // },
+  // ubicacion : {
+  //   type: String,
+  //   label: "Ubicaciòn",
+  //   allowedValues: [ 'CDMX','MTY'], autoform: {firstOption: true}
+  // },
 
-// ReactiveTemplates.request('collections.datos.update');
-// ReactiveTemplates.set('collections.datos.update', 'mitemplate');
+  picture: orion.attribute('image', {
+    optional: true,
+    label: 'Foto'
+  }),
+/*  bio: {
+    type: String,
+    label: 'Bio'
+  },
+  */
 
-// ReactiveTemplates.helpers('collections.datos.update',{
+});
 
-// });
-
-// ReactiveTemplates.onRendered('collections.datos.update',function(){
-// 	console.log("Hola");
-// });
+orion.accounts.profileSchema = new SimpleSchema({
+  profile: {
+    type: UserProfileSchema
+  }
+});

@@ -18,6 +18,13 @@ ReactiveTemplates.onRendered('collections.datos.update',function(){
 	console.log("Hola");
 });
 
+ReactiveTemplates.events('collections.datos.create',{
+	// "keyup :input[name='nombre']":function(evt){
+	"keyup :input":function(evt){
+		evt.target.value = evt.target.value.toUpperCase();
+	}
+});
+
 
 
 // ReactiveTemplates.set('collections.datos.update', 'mitemplate');
