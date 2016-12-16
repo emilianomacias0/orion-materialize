@@ -3,3 +3,7 @@ Template.usuarioFoto.helpers({
 		return Meteor.user().profile.picture.url;
 	}
 })
+
+Template.imagen.onRendered(function(){
+	console.log(this);
+})
