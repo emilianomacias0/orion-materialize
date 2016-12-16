@@ -1,0 +1,57 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+reactive-var            # Reactive variable for tracker
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifier-js    # JS minifier run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+autopublish             # Publish all data to the clients (for prototyping)
+insecure                # Allow all DB writes from clients (for prototyping)
+aldeed:autoform
+aslagle:reactive-table
+dburles:mongo-collection-instances
+email
+fortawesome:fontawesome
+forwarder:autoform-wizard
+forwarder:autoform-wizard-iron-router
+gquemart:meteor-reactive-fullcalendar
+iron:router
+less
+matb33:collection-hooks
+materialize:materialize
+meteorstuff:materialize-modal
+momentjs:moment
+natestrauser:connection-banner
+nicolaslopezj:roles
+rzymek:moment-locale-es
+session
+useraccounts:iron-routing
+useraccounts:materialize
+orionjs:core
+orionjs:materialize
+orionjs:relationships
+orionjs:filesystem
+vsivsi:orion-file-collection
+orionjs:attributes
+orionjs:image-attribute
+orionjs:lang-es
+netanelgilad:excel
+vsivsi:job-collection
+kevinchen:echarts
+aldeed:collection2
+ostrio:logger
+ostrio:loggerfile
+nerdmed:sweet-alert
+standard-minifier-css
+meteortoys:allthings
